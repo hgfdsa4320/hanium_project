@@ -52,8 +52,11 @@ class loginFragment : Fragment() {
         loginBt.setOnClickListener(){
             var id = idEt.text.toString()
             var pass = passEt.text.toString()
-            login(id,pass)
-//            (activity as MainActivity).setFragment(MainActivity.JOIN)
+            if(id.isNotEmpty() && pass.isNotEmpty())
+                login(id,pass)
+            else
+                Toast.makeText(context,"아이디나 비밀번호를 입력해주세요",Toast.LENGTH_SHORT).show()
+
         }
 
         idPassTv.setOnClickListener(){
@@ -103,7 +106,6 @@ class loginFragment : Fragment() {
                 menuFragment.arguments = bundle //fragment의 arguments에 데이터를 담은 bundle을 넘겨줌
 
 
-                Log.d("aabb","클리;ㄱ")
                 (activity as MainActivity?)!!.setFragment2(menuFragment)
 
 
@@ -112,7 +114,6 @@ class loginFragment : Fragment() {
 
             else if(login=="NK")
                 Toast.makeText(context,"아이디나 비밀번호를 확인해주세요",Toast.LENGTH_SHORT).show()
-//            Log.d("aabb","msg: "+token)
 
 
         }

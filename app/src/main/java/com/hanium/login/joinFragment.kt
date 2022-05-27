@@ -1,6 +1,8 @@
 package com.hanium.login
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -15,6 +17,7 @@ import com.android.volley.toolbox.Volley
 import com.hanium.R
 import org.json.JSONObject
 import java.security.MessageDigest
+import java.util.regex.Pattern
 import kotlin.experimental.and
 
 class joinFragment : Fragment() {
@@ -45,30 +48,69 @@ class joinFragment : Fragment() {
         addressEt = view.findViewById(R.id.addressEt)
         passChkEt = view.findViewById(R.id.passChkEt)
 
+
+        idEt.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) { }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) { }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                isEmail()
+            }
+        })
+
+
         idChk.setOnClickListener(){
-            idChkJson()
+            var id = idEt.text.toString()
+            if(id.isNotEmpty())
+                idChkJson(id)
+            else
+                Toast.makeText(context, "아이디를 입력 해주세요.", Toast.LENGTH_SHORT).show()
         }
 
-        joinBt.setOnClickListener(){
-            if(isCheck){
-                if(passEt.text.toString().equals(passChkEt.text.toString()))
-                    makeId()
-                else
-                    Toast.makeText(context, "비밀번호를 확인 해주세요.", Toast.LENGTH_SHORT).show()
-            }
-            else{
-                Toast.makeText(context, "아이디 중복체크를 해주세요.", Toast.LENGTH_SHORT).show()
-            }
+        joinBt.setOnClickListener() {
+
+            var id = idEt.text.toString()
+            var pass = passEt.text.toString()
+            var name = nameEt.text.toString()
+            var address = addressEt.text.toString()
+
+            if (id.isNotEmpty() && pass.isNotEmpty() && name.isNotEmpty() && address.isNotEmpty()) {
+
+                if (isCheck) {
+                    if (passEt.text.toString().equals(passChkEt.text.toString()))
+                        makeId(id, pass, name, address)
+                    else
+                        Toast.makeText(context, "비밀번호를 확인 해주세요.", Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(context, "아이디 중복체크를 해주세요.", Toast.LENGTH_SHORT).show()
+                }
 
 
+            }
         }
 
 
         return view
     }
 
+    fun isEmail():Boolean{
+        val emailValidation = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"
+        var id = idEt.text.trim()
+        val p = Pattern.matches(emailValidation, id)
+        if (p) {
 
-    fun idChkJson(){
+            idEt.setTextColor(R.color.black.toInt())
+            return true
+        } else {
+           idEt.setTextColor(-65536)
+
+            return false
+        }
+    }
+
+
+    fun idChkJson(id : String){
         var url = "https://wlghks1767.cafe24.com/myserver/phpfile/idChk.php"
         val requestQueue = Volley.newRequestQueue(context)
 
@@ -76,7 +118,6 @@ class joinFragment : Fragment() {
             Request.Method.POST, url,checkId,fail ) {
             override fun getParams(): MutableMap<String, String> {
                 val params : MutableMap<String,String> = HashMap()
-                var id = idEt.text.toString()
 
                 params.put("userid",id)
                 return params
@@ -87,7 +128,7 @@ class joinFragment : Fragment() {
     }
 
 
-    fun makeId(){
+    fun makeId(id:String, pass: String, name:String, address: String){
         var url = "https://wlghks1767.cafe24.com/myserver/phpfile/makeId.php"
         val requestQueue = Volley.newRequestQueue(context)
 
@@ -95,10 +136,7 @@ class joinFragment : Fragment() {
             Request.Method.POST, url,makeId,fail ) {
             override fun getParams(): MutableMap<String, String> {
                 val params : MutableMap<String,String> = HashMap()
-                var id = idEt.text.toString()
-                var pass = passEt.text.toString()
-                var name = nameEt.text.toString()
-                var address = addressEt.text.toString()
+
 
                 params.put("name",name)
                 params.put("userid",id)

@@ -4,12 +4,12 @@
 
     <stroke
         android:width="2.2dp"
-        android:color="#787A7A" /> //선색
+        android:color="#C4C6C6" /> //선색
     <corners
-        android:topLeftRadius="7dp"
-        android:topRightRadius="7dp"
-        android:bottomLeftRadius="7dp"
-        android:bottomRightRadius="7dp"  /> // 선 휘는각도
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp"
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"  /> // 선 휘는각도
 
     />
 

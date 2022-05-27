@@ -4,6 +4,8 @@
     //주의 화면이 꽉차면 다음 화면이 안나옴
 
     <TextView
+        android:textStyle="bold"
+        android:textColor="@color/black"
         android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -12,6 +14,9 @@
         android:textSize="20sp" />
 
     <TextView
+        android:textColor="#5E5D5D"
+        android:maxLines="1"
+        android:ellipsize="end"
         android:id="@+id/tv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

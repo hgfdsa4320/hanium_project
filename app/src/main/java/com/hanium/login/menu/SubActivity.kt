@@ -29,18 +29,25 @@ import org.json.JSONObject
 class SubActivity : AppCompatActivity() {
     lateinit var makeBt: Button
     lateinit var rv : RecyclerView
+    lateinit var backBt : Button
+
     var roomList : ArrayList<ItemData> = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sub)
         makeBt = findViewById(R.id.makeBt)
+        backBt = findViewById(R.id.backBt)
         rv= findViewById(R.id.rv)
 
         var token = intent.getStringExtra("token")
 
 
         getRoom()
+
+        backBt.setOnClickListener(){
+            onBackPressed()
+        }
 
 
 
