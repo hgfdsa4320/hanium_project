@@ -71,6 +71,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:drawableTop="@drawable/ic_baseline_menu_book_24"
+                        android:id="@+id/home_list_btn1"
                         android:background="@color/transparent"
                         android:text="책"
                         android:textSize="10sp"
@@ -83,6 +84,7 @@
                     <Button
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:id="@+id/home_list_btn2"
                         android:drawableTop="@drawable/ic_baseline_laptop_mac_24"
                         android:background="@color/transparent"
                         android:text="전자제품"
@@ -95,6 +97,7 @@
                     <Button
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:id="@+id/home_list_btn3"
                         android:background="@color/transparent"
                         android:drawableTop="@drawable/ic_baseline_brush_24"
                         android:text="필기구"
@@ -107,6 +110,7 @@
                     <Button
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:id="@+id/home_list_btn4"
                         android:background="@color/transparent"
                         android:drawableTop="@drawable/ic_baseline_cleaning_services_24"
                         android:text="생활용품"
@@ -126,6 +130,7 @@
                     <Button
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:id="@+id/home_list_btn5"
                         android:background="@color/transparent"
                         android:drawableTop="@drawable/ic_baseline_eco_24"
                         android:text="식재료"
@@ -139,6 +144,7 @@
                     <Button
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:id="@+id/home_list_btn6"
                         android:background="@color/transparent"
                         android:drawableTop="@drawable/ic_baseline_checkroom_24"
                         android:text="의류"
@@ -151,6 +157,7 @@
                     <Button
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:id="@+id/home_list_btn7"
                         android:background="@color/transparent"
                         android:drawableTop="@drawable/ic_baseline_handshake_24"
                         android:text="중고"
@@ -163,6 +170,7 @@
                     <Button
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:id="@+id/home_list_btn8"
                         android:background="@color/transparent"
                         android:drawableTop="@drawable/ic_baseline_delivery_dining_24"
                         android:text="배달"
