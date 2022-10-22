@@ -12,7 +12,8 @@
         <entry key="..\:/Users/JiHwan/AndroidStudioProjects/Delivery2/app/src/main/res/layout/login.xml" value="0.264" />
         <entry key="app/src/main/res/drawable/bt_theme.xml" value="0.1425" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1035" />
-        <entry key="app/src/main/res/layout/activity_chatroom.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_chatroom.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.28596496582031256" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.27794871794871795" />
         <entry key="app/src/main/res/layout/activity_main_login.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_make_room.xml" value="0.27794871794871795" />
@@ -20,6 +21,7 @@
         <entry key="app/src/main/res/layout/activity_offline1.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_offline2.xml" value="0.17613525390625" />
         <entry key="app/src/main/res/layout/activity_post.xml" value="0.16185150146484378" />
+        <entry key="app/src/main/res/layout/activity_product.xml" value="0.16003875732421877" />
         <entry key="app/src/main/res/layout/activity_room_list.xml" value="0.125" />
         <entry key="app/src/main/res/layout/activity_sub.xml" value="0.159375" />
         <entry key="app/src/main/res/layout/chatitem.xml" value="0.19610507246376813" />
@@ -36,6 +38,8 @@
         <entry key="app/src/main/res/layout/login.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/make.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/menu.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/product_recyclerview_item.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/viewpager_item.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/yourchat.xml" value="0.1" />
       </map>
     </option>

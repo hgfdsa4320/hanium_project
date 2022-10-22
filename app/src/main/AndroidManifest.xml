@@ -12,9 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hanium"
         android:usesCleartextTraffic="true">
-        <!-- <activity -->
-        <!-- android:name=".offline.Offline1Activity" -->
-        <!-- android:exported="false" /> -->
+
+        <activity
+            android:name=".activities.ProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".RoomListActivity"
             android:exported="true" />
@@ -29,15 +40,11 @@
             android:exported="true" />
         <activity
             android:name=".offline.Offline1Activity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
         </activity>
         <activity android:name=".Chat.PostActivity" />
-        <activity android:name=".offline.Offline2Activity"/>
+        <activity android:name=".offline.Offline2Activity" />
         <activity
             android:name=".Chat.ChatRoomActivity"
             android:exported="true"

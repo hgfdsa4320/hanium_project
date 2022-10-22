@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewTreeObserver
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -23,7 +24,7 @@ data class ChatData(val message: String = "", val nickname: String = "")
 class ChatRoomActivity : AppCompatActivity(){
     lateinit var rv : RecyclerView
     lateinit var et: EditText
-    lateinit var btn: Button
+    lateinit var send_btn: Button
     lateinit var adapter: ChatRecyclerAdapter
     private val array = ArrayList<ChatData>()
     private val db = Firebase.database
@@ -36,15 +37,19 @@ class ChatRoomActivity : AppCompatActivity(){
         setContentView(R.layout.activity_chatroom)
         rv = findViewById(R.id.chat_recyclerview)
         et = findViewById(R.id.chat_message)
-        btn = findViewById(R.id.send_btn)
+        send_btn = findViewById(R.id.send_btn)
+        val refresh_btn: ImageButton = findViewById(R.id.refresh_btn)
         val layoutManager = LinearLayoutManager(applicationContext)
         layoutManager.stackFromEnd = true
         rv.layoutManager = layoutManager
 
         myRef.addChildEventListener(childEventListener)
-        btn.setOnClickListener(onClickListener)
+        send_btn.setOnClickListener(onClickListener)
+        refresh_btn.setOnClickListener(onClickListener)
         adapter = ChatRecyclerAdapter(array, myNickname)
         rv.adapter = adapter
+
+
     }
     private val childEventListener = object : ChildEventListener{
         override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
@@ -71,10 +76,17 @@ class ChatRoomActivity : AppCompatActivity(){
         }
     }
     private val onClickListener = View.OnClickListener { view ->
-        val message = et.text.toString()
-        val data = ChatData(message, myNickname)
-        myRef.push().setValue(data)
-        et.text.clear()
+        when (view.id){
+            R.id.send_btn -> {
+                val message = et.text.toString()
+                val data = ChatData(message, myNickname)
+                myRef.push().setValue(data)
+                et.text.clear()
+            }
+            R.id.refresh_btn -> {
+
+            }
+        }
 
     }
 }
