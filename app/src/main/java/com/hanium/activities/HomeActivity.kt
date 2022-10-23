@@ -16,14 +16,7 @@ import com.hanium.adapters.HomeViewPagerAdapter
 class HomeActivity : AppCompatActivity() {
     lateinit var viewpager: ViewPager2
     lateinit var recyclerview: RecyclerView
-    lateinit var listBtn1: Button
-    lateinit var listBtn2: Button
-    lateinit var listBtn3: Button
-    lateinit var listBtn4: Button
-    lateinit var listBtn5: Button
-    lateinit var listBtn6: Button
-    lateinit var listBtn7: Button
-    lateinit var listBtn8: Button
+
     var btns = arrayOfNulls<Button>(8)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +35,7 @@ class HomeActivity : AppCompatActivity() {
 
         viewpager.adapter = HomeViewPagerAdapter(arrayList)
         viewpager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
+
     }
 
     private val onClickListener = View.OnClickListener { view ->

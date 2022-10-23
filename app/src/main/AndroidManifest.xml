@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Hanium"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".activities.BuyingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ClassActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.ProductListActivity"
             android:exported="false" />
         <activity
@@ -42,7 +48,7 @@
         <activity
             android:name=".offline.Offline1Activity"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize"></activity>
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name=".Chat.PostActivity" />
         <activity android:name=".offline.Offline2Activity" />
         <activity
