@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IdPassActivity">
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:textSize="30sp"
+        android:id="@+id/idTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디 찾기"
+        />
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/et_theme"
+        android:layout_below="@+id/idTv"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="이름"
+        android:id="@+id/idEt"/>
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_theme"
+        android:layout_below="@+id/idEt"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="주소"
+        android:id="@+id/addrEt"/>
+
+    <Button
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/idEt"
+        android:id="@+id/idSearchBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디 찾기"
+        android:layout_toRightOf="@id/addrEt"/>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:textSize="30sp"
+        android:layout_below="@id/addrEt"
+        android:id="@+id/passTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 찾기"
+        />
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/et_theme"
+        android:layout_below="@+id/passTv"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="아이디"
+        android:id="@+id/emailEt"/>
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_theme"
+        android:layout_below="@+id/emailEt"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="이름"
+        android:id="@+id/nameEt"/>
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_theme"
+        android:layout_below="@+id/nameEt"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="인증번호"
+        android:id="@+id/ipEt"/>
+
+    <Button
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/emailEt"
+        android:id="@+id/ipBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="인증번호 발급"
+        android:layout_toRightOf="@id/nameEt"/>
+
+    <Button
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/nameEt"
+        android:id="@+id/okayBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:layout_toRightOf="@id/ipEt"/>
+
+</RelativeLayout>
