@@ -120,6 +120,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:id="@+id/class_confirm_btn"
         android:background="@color/mainColor"
         android:text="등록"
         android:textSize="18sp"

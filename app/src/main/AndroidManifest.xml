@@ -29,7 +29,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -42,19 +41,22 @@
         <activity
             android:name=".MakeRoomActivity"
             android:exported="true" />
-        <activity
-            android:name=".login.menu.SubActivity"
-            android:exported="true" />
+
         <activity
             android:name=".offline.Offline1Activity"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".Chat.PostActivity" />
-        <activity android:name=".offline.Offline2Activity" />
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Chat.PostActivity"/>
+        <activity android:name=".offline.Offline2Activity"/>
         <activity
             android:name=".Chat.ChatRoomActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activities.ClassItemActivity"/>
+        <activity android:name=".activities.MyPageActivity"/>
+        <activity android:name=".activities.HistoryActivity"/>
+        <activity android:name=".activities.PaymentActivity"/>
+        <activity android:name=".activities.ProgressPurActivity"/>
     </application>
 
 </manifest>

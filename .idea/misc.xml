@@ -15,13 +15,21 @@
         <entry key="app/src/main/res/layout/activity_buying.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_chatroom.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_class.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_class_item.xml" value="0.13229166666666667" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.28596496582031256" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.27794871794871795" />
         <entry key="app/src/main/res/layout/activity_main_login.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_make_room.xml" value="0.27794871794871795" />
         <entry key="app/src/main/res/layout/activity_make_room_detail.xml" value="0.27794871794871795" />
+        <entry key="app/src/main/res/layout/activity_mypage.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_num10.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_num5.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_num7.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_num8.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_num9.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_offline1.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_offline2.xml" value="0.17613525390625" />
+        <entry key="app/src/main/res/layout/activity_payment.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/activity_post.xml" value="0.16185150146484378" />
         <entry key="app/src/main/res/layout/activity_product.xml" value="0.16003875732421877" />
         <entry key="app/src/main/res/layout/activity_product_list.xml" value="0.2463768115942029" />
@@ -42,7 +50,10 @@
         <entry key="app/src/main/res/layout/login.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/make.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/menu.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/order.xml" value="0.13229166666666667" />
+        <entry key="app/src/main/res/layout/present.xml" value="0.13229166666666667" />
         <entry key="app/src/main/res/layout/product_recyclerview_item.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/purlist.xml" value="0.1" />
         <entry key="app/src/main/res/layout/viewpager_item.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/yourchat.xml" value="0.1" />
       </map>
