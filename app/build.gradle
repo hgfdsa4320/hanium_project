@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+<<<<<<< HEAD
     id 'org.jetbrains.kotlin.android'
 }
 
@@ -10,6 +11,19 @@ android {
         applicationId "com.example.haniumproject"
         minSdk 21
         targetSdk 32
+=======
+    id 'kotlin-android'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.hanium"
+        minSdk 21
+        targetSdk 31
+>>>>>>> 58b9f6cce3ffa349c1ce169d3573a874c8b1f4d2
         versionCode 1
         versionName "1.0"
 
@@ -35,6 +49,7 @@ android {
 }
 
 dependencies {
+<<<<<<< HEAD
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.2'
@@ -43,4 +58,19 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+=======
+    implementation 'com.google.firebase:firebase-installations:17.0.1'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation platform('com.google.firebase:firebase-bom:30.0.2')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-database-ktx'
+>>>>>>> 58b9f6cce3ffa349c1ce169d3573a874c8b1f4d2
 }
