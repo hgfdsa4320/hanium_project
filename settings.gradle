@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dcbf8e9b9c638644e55ce24061c9b2b716cdb950
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -5,12 +9,30 @@ pluginManagement {
         mavenCentral()
     }
 }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 58b9f6cce3ffa349c1ce169d3573a874c8b1f4d2
+>>>>>>> dcbf8e9b9c638644e55ce24061c9b2b716cdb950
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+<<<<<<< HEAD
     }
 }
 rootProject.name = "Delivery3"
+=======
+<<<<<<< HEAD
+    }
+}
+rootProject.name = "haniumProject"
+=======
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "hanium"
+>>>>>>> 58b9f6cce3ffa349c1ce169d3573a874c8b1f4d2
+>>>>>>> dcbf8e9b9c638644e55ce24061c9b2b716cdb950
 include ':app'

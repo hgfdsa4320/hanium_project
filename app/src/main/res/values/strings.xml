@@ -1,3 +1,13 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">Delivery3</string>
+=======
+<<<<<<< HEAD
+    <string name="app_name">haniumProject</string>
+=======
+    <string name="app_name">hanium</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+>>>>>>> 58b9f6cce3ffa349c1ce169d3573a874c8b1f4d2
+>>>>>>> dcbf8e9b9c638644e55ce24061c9b2b716cdb950
 </resources>

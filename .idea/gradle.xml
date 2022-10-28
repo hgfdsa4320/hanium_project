@@ -5,8 +5,19 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="testRunner" value="GRADLE" />
+<<<<<<< HEAD
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+=======
+<<<<<<< HEAD
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+=======
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="11" />
+>>>>>>> 58b9f6cce3ffa349c1ce169d3573a874c8b1f4d2
+>>>>>>> dcbf8e9b9c638644e55ce24061c9b2b716cdb950
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />

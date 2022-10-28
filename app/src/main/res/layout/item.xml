@@ -3,6 +3,7 @@
     android:layout_width="match_parent" android:layout_height="wrap_content">
     //주의 화면이 꽉차면 다음 화면이 안나옴
 
+<<<<<<< HEAD
     <ImageView
         android:id="@+id/iv"
         android:layout_width="wrap_content"
@@ -34,5 +35,28 @@
         android:layout_marginLeft="15dp"
         android:text="20,000원"
         android:textSize="25sp" />
+=======
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="카테고리"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:textColor="#5E5D5D"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv1"
+        android:layout_marginLeft="15dp"
+        android:text="제목"
+        android:textSize="20sp" />
+>>>>>>> dcbf8e9b9c638644e55ce24061c9b2b716cdb950
 
 </RelativeLayout>
