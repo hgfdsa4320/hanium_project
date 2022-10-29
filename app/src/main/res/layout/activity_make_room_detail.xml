@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Make Room"
-            android:textColor="@color/primary_color"
+
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -34,7 +34,7 @@
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/primary_color"
+
         android:text="치킨"
         android:textStyle="bold"
         android:layout_gravity="center"
@@ -108,9 +108,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="등록"
-            android:textSize="30sp"
-            android:textColor="@color/black"
-            android:backgroundTint="#e0e0e0"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@color/mainColor"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

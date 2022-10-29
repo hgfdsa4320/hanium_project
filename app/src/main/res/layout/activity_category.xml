@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hanium.CategoryActivity">
+
+    <ImageButton
+        android:id="@+id/backBt"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        android:textColor="#2196F3"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"/>
+
+    <ImageButton
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="120dp"
+        android:id="@+id/chickenBt"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/chicken"/>
+
+    <TextView
+        android:layout_marginLeft="80dp"
+        android:layout_below="@+id/chickenBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="치킨"/>
+
+    <ImageButton
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/chickenBt"
+        android:layout_marginTop="120dp"
+        android:id="@+id/pizzaBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pizza"/>
+
+    <TextView
+        android:layout_marginLeft="270dp"
+        android:layout_below="@+id/pizzaBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="피자"/>
+
+    <ImageButton
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="270dp"
+        android:id="@+id/hamburgerBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hamburger"/>
+
+    <TextView
+        android:layout_marginLeft="80dp"
+        android:layout_below="@+id/hamburgerBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="햄버거"/>
+
+    <ImageButton
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/chickenBt"
+        android:layout_marginTop="270dp"
+        android:id="@+id/jajangBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/jajang"/>
+
+    <TextView
+        android:layout_marginLeft="270dp"
+        android:layout_below="@+id/jajangBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="중식"/>
+
+    <ImageButton
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="430dp"
+        android:id="@+id/westernBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/western"/>
+
+    <TextView
+        android:layout_marginLeft="80dp"
+        android:layout_below="@+id/westernBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="양식"/>
+
+    <ImageButton
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/chickenBt"
+        android:layout_marginTop="430dp"
+        android:id="@+id/etcBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/etc"/>
+
+    <TextView
+        android:layout_marginLeft="270dp"
+        android:layout_below="@+id/etcBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="기타"/>
+
+
+
+</RelativeLayout>
